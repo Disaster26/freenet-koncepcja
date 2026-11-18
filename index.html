@@ -243,6 +243,47 @@ h2 .pod{background:linear-gradient(transparent 62%,var(--zl) 62%,var(--zl) 92%,t
 .dane .sk{background:var(--z);color:var(--k)}
 .stopka{background:#16340C;border-top:6px solid var(--y)}
 .stopka .logo .wm i{color:var(--y)}
+/* 18.11: blok Internet - pelny gigabit + sprawdzenie adresu */
+#internet{background:#fff}
+.net{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,4.6vw,80px);align-items:center}
+.gb{position:relative;background:var(--k);color:#fff;border-radius:22px 22px 22px 4px;padding:clamp(28px,3.6vw,54px);display:flex;flex-direction:column;overflow:hidden}
+.gb .lb{font-size:17px;font-weight:600;color:rgba(255,255,255,.82)}
+.gb .lb b{color:var(--y);font-weight:700}
+.gb .nr{display:flex;align-items:flex-end;flex-wrap:wrap;gap:6px 14px;margin-top:clamp(40px,6vw,96px)}
+.gb .nr b{font-size:clamp(96px,9.2vw,172px);line-height:.78;letter-spacing:-.065em;color:var(--z);font-weight:700}
+.gb .nr span{font-size:clamp(26px,2.4vw,38px);font-weight:700;line-height:1;letter-spacing:-.03em;padding-bottom:4px}
+.gb .ln{position:relative;height:34px;margin-top:30px}
+.gb .ln:before{content:"";position:absolute;left:0;right:0;top:50%;height:4px;margin-top:-2px;border-radius:4px;background:linear-gradient(90deg,var(--z) 0,var(--z) 62%,var(--y) 62%,var(--y) 100%)}
+.gb .ln svg{position:absolute;right:-2px;top:0;width:52px;height:34px;background:var(--k);padding-left:8px}
+.gb .op{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;margin-top:12px;font-size:15px;color:rgba(255,255,255,.72)}
+.gb .op b{color:#fff;font-weight:600}
+.net .pr h2{max-width:13em}
+.net .lead2{margin-top:20px;font-size:clamp(18px,1.4vw,21px);color:var(--s);max-width:31em}
+.trzy{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--l)}
+.trzy li{padding:18px 16px 0 0}
+.trzy li+li{padding-left:18px;border-left:1px solid var(--l)}
+.trzy b{display:block;font-size:clamp(24px,2.1vw,32px);line-height:1;letter-spacing:-.03em;color:var(--k)}
+.trzy span{display:block;margin-top:8px;font-size:15px;line-height:1.35;color:var(--s)}
+.adr{margin-top:32px;background:var(--zj);border-radius:18px 18px 18px 4px;padding:clamp(22px,2.4vw,32px);border:1px solid #D3ECBF}
+.adr h3{font-size:22px}
+.adr .zd{margin-top:16px;font-size:clamp(18px,1.5vw,21px);line-height:2.3;color:var(--t)}
+.adr input{font:inherit;font-size:18px;font-weight:600;color:var(--k);background:#fff;border:0;border-bottom:2px solid var(--zc);border-radius:8px 8px 0 0;padding:4px 10px;margin:0 4px;vertical-align:baseline}
+.adr input::placeholder{color:#8A939C;font-weight:400}
+.adr input:focus{outline:2px solid var(--zc);outline-offset:2px}
+.adr #a-ul{width:min(15em,100%)}.adr #a-nr{width:6.5em}
+.adr .btn{margin-top:18px}
+.adr .ii{margin-top:12px;font-size:14.5px;color:var(--s)}
+@media (max-width:1060px){.net{grid-template-columns:1fr}.gb .nr{margin-top:34px}}
+@media (max-width:700px){
+  .gb{padding:26px 22px 24px}
+  .gb .nr b{font-size:clamp(92px,29vw,128px)}
+  .trzy{grid-template-columns:1fr}
+  .trzy li,.trzy li+li{padding:14px 0;border-left:0;border-bottom:1px solid var(--l);display:flex;align-items:baseline;gap:14px}
+  .trzy span{margin-top:0}
+  .adr .zd{line-height:1.5}
+  .adr input{display:block;width:100%!important;margin:6px 0 12px}
+  .adr .btn{width:100%;margin-top:6px}
+}
 @media (max-width:700px){
   .hero:after{background:linear-gradient(180deg,rgba(255,251,230,0) 0,rgba(255,251,230,0) 46vw,rgba(255,251,230,.92) 82vw,var(--krem) 100vw)}
   .hero .in:before{display:none}
@@ -260,6 +301,7 @@ h2 .pod{background:linear-gradient(transparent 62%,var(--zl) 62%,var(--zl) 92%,t
   <div class="wrap">
     <a class="logo" href="#" aria-label="freenet.org - strona główna"><span class="wm">freenet<i>.</i>org</span><svg aria-hidden="true"><use href="#ptaszki"/></svg></a>
     <nav class="menu" id="menu" aria-label="Menu">
+      <a href="#internet">Internet</a>
       <a href="#cennik">Cennik</a>
       <a href="#osiedla">Dla nowych osiedli</a>
       <a href="#zamow">Zamów</a>
@@ -286,6 +328,32 @@ h2 .pod{background:linear-gradient(transparent 62%,var(--zl) 62%,var(--zl) 92%,t
     <div class="cta">
       <a class="btn" href="#zamow">Zamów internet</a>
       <p class="bok">albo zadzwoń: <a href="tel:+48717215151"><b>71 721 51 51</b></a><br>pn-pt 9:00-17:00</p>
+    </div>
+  </div>
+</section>
+
+<section id="internet" aria-label="Internet światłowodowy">
+  <div class="wrap net">
+    <div class="gb">
+      <p class="lb">Internet światłowodowy Freenet<br><b>w każdym pakiecie ta sama prędkość</b></p>
+      <p class="nr"><b>1000</b><span>Mb/s</span></p>
+      <div class="ln" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#znak"/></svg></div>
+      <p class="op"><span>światłowód do mieszkania</span><span>od <b>39 zł/mies.</b> brutto</span></p>
+    </div>
+    <div class="pr">
+      <h2>Internet światłowodowy <span class="pod">zawsze pełny gigabit</span></h2>
+      <p class="lead2">W Freenet nie ma wariantów 300 czy 500 Mb/s. Każdy pakiet to pełny gigabit, a telewizję i telefon komórkowy dokładasz tylko, jeśli chcesz.</p>
+      <ul class="trzy">
+        <li><b>1 Gb/s</b><span>pełna prędkość światłowodu</span></li>
+        <li><b>Bez limitu</b><span>danych w miesiącu</span></li>
+        <li><b>Wi-Fi 6</b><span>router w zestawie z internetem</span></li>
+      </ul>
+      <form class="adr" id="adr" novalidate>
+        <h3>Sprawdź dostępność pod swoim adresem</h3>
+        <p class="zd"><label for="a-ul">Mieszkam we Wrocławiu przy ulicy</label> <input id="a-ul" name="ulica" autocomplete="address-line1" placeholder="nazwa ulicy"> <label for="a-nr">pod numerem</label> <input id="a-nr" name="numer" placeholder="nr / lok."></p>
+        <button class="btn" type="submit">Sprawdź dostępność</button>
+        <p class="ii">Przeniesiemy adres do zamówienia, a dostępność potwierdzimy telefonicznie.</p>
+      </form>
     </div>
   </div>
 </section>
