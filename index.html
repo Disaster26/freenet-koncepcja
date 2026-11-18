@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Freenet - internet światłowodowy 1 Gb/s na nowych osiedlach Wrocławia</title>
+<meta name="description" content="Światłowód 1000 Mb/s za 39 zł/mies. brutto, pakiety z telewizją i telefonem komórkowym. Freenet - internet dla nowych osiedli Wrocławia od lokalnego operatora WrocNet.">
+<meta name="theme-color" content="#0D1016">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" type="image/webp" href="img/hero-m-720.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w, img/hero-m-960.webp 960w" imagesizes="100vw" media="(max-width:700px)">
+<link rel="preload" as="image" type="image/webp" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:701px)">
+<link rel="preload" as="font" type="font/woff2" href="fonts/dm-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/dm-pl.woff2" crossorigin>
+<style>
+@font-face{font-family:"DM Sans";font-weight:400 700;font-display:swap;src:url(fonts/dm-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+2122,U+2192}
+@font-face{font-family:"DM Sans";font-weight:400 700;font-display:swap;src:url(fonts/dm-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"DMfb";font-weight:400;src:local("Arial");size-adjust:99.1%}
+@font-face{font-family:"DMfb";font-weight:700 800;src:local("Arial Bold"),local("Arial-BoldMT"),local("Arial");size-adjust:97%}
+:root{--z:#64C42F;--zc:#3F8F17;--zh:#56B024;--y:#F8D830;--k:#0D1016;--k2:#161B22;--t:#14181F;--s:#4F5862;--g:#F1F3F5;--l:#DCE1E6;--hh:70px;--gut:clamp(16px,3.4vw,60px);--w:1320px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"DM Sans","DMfb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6;color:var(--t);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.06;letter-spacing:-.025em;font-weight:700}
+h1{font-size:clamp(40px,min(5vw,8.4vh),80px);max-width:11em}
+h2{font-size:clamp(31px,3.4vw,52px)}
+h3{font-size:21px;line-height:1.2;letter-spacing:-.01em}
+p{margin:0}
+.wrap{width:min(var(--w),100% - 2*var(--gut));margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--z);color:var(--k);font-weight:700;font-size:19px;text-decoration:none;padding:17px 30px;border-radius:12px 12px 12px 2px;line-height:1.2;border:0;cursor:pointer;font-family:inherit;transition:background .2s,transform .2s}
+.btn:hover{background:var(--zh)}
+.btn:active{transform:translateY(1px)}
+
+/* znak z logo: punkt + dwa "ptaszki" (zielony i zolty) */
+.znak{flex:none}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.top.sc{border-bottom-color:var(--l);box-shadow:0 6px 24px rgba(13,16,22,.07)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:26px}
+.logo{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:var(--k);line-height:1}
+.logo .wm{font-weight:700;font-size:27px;letter-spacing:-.04em}
+.logo .wm i{font-style:normal;color:var(--zc)}
+.logo svg{width:44px;height:13px;margin:2px 0 0 58px}
+.menu{display:flex;gap:2px;margin-left:auto;align-items:center}
+.menu a{text-decoration:none;font-weight:500;font-size:16px;padding:10px 13px;border-radius:8px;color:var(--t)}
+.menu a:hover{background:var(--g)}
+.menu a.on{color:var(--zc)}
+.menu .sk{color:var(--zc);font-weight:600}
+.top .tel{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;font-size:17px;color:#fff;background:var(--k);padding:11px 18px;border-radius:12px 12px 12px 2px;white-space:nowrap}
+.top .tel:hover{background:#000}
+.top .tel svg{width:17px;height:17px}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border:1px solid var(--l);background:#fff;border-radius:8px;cursor:pointer;padding:0;align-items:center;justify-content:center}
+.burger i{display:block;width:20px;height:2px;background:var(--t);position:relative;transition:background .2s}
+.burger i:before,.burger i:after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--t);transition:transform .25s}
+.burger i:before{top:-6px}.burger i:after{top:6px}
+.top.open .burger i{background:transparent}
+.top.open .burger i:before{transform:translateY(6px) rotate(45deg)}
+.top.open .burger i:after{transform:translateY(-6px) rotate(-45deg)}
+
+/* pierwszy ekran - zdjecie na spad */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;flex-direction:column;justify-content:center;color:#fff;background:var(--k);overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:60% 30%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,16,22,.86) 0%,rgba(13,16,22,.62) 34%,rgba(13,16,22,.08) 62%,rgba(13,16,22,0) 75%)}
+.hero .in{position:relative;z-index:2;width:min(var(--w),100% - 2*var(--gut));margin:0 auto;padding:56px 0 64px}
+.hero .lead{font-size:clamp(18px,1.45vw,22px);line-height:1.5;max-width:30em;margin-top:22px;color:rgba(255,255,255,.92)}
+.cena-h{display:flex;align-items:flex-end;gap:14px;margin-top:28px}
+.cena-h b{font-size:clamp(64px,6.4vw,104px);line-height:.82;letter-spacing:-.05em;color:var(--z)}
+.cena-h span{font-size:17px;line-height:1.3;color:rgba(255,255,255,.9);padding-bottom:4px}
+.hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:34px}
+.hero .bok{font-size:16px;line-height:1.45;color:rgba(255,255,255,.88)}
+.hero .bok b{color:#fff;font-size:18px}
+.hero .bok a{text-decoration:none}
+
+/* sekcje */
+section{padding:clamp(64px,8vw,120px) 0}
+.sz{background:var(--g)}
+.hd{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 40px;margin-bottom:clamp(30px,3.6vw,52px)}
+.hd p{max-width:34em;color:var(--s);font-size:18px}
+
+/* cennik */
+.pks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,24px)}
+.pk{background:#fff;border:1px solid var(--l);border-radius:16px 16px 16px 4px;overflow:hidden;display:flex;flex-direction:column}
+.pk .foto{aspect-ratio:4/3;overflow:hidden;background:#dfe4e8}
+.pk .foto img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.pk:hover .foto img{transform:scale(1.04)}
+.pk .tx{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.pk h3{font-size:24px}
+.pk ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px;font-size:16.5px;line-height:1.4}
+.pk li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.pk li svg{width:20px;height:14px;margin-top:4px}
+.pc{display:flex;align-items:flex-end;gap:10px;margin-top:auto;padding-top:20px;border-top:1px solid var(--g)}
+.pk ul{margin-bottom:22px}
+.pc b{font-size:clamp(48px,4vw,60px);line-height:.85;letter-spacing:-.05em;color:var(--k)}
+.pc span{font-size:14.5px;line-height:1.25;color:var(--s)}
+.pz{margin-top:22px;display:flex;justify-content:center;align-items:center;min-height:52px;padding:12px 18px;background:var(--z);border-radius:12px 12px 12px 2px;font-weight:700;text-decoration:none;color:var(--k);transition:background .2s}
+.pz:hover{background:var(--zh)}
+.uwaga{margin-top:22px;font-size:15px;color:var(--s)}
+
+/* osiedla */
+.os{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,6vw,100px);align-items:center}
+.os .ff{border-radius:16px 16px 16px 4px;overflow:hidden;aspect-ratio:4/5;background:#e6d6b5}
+.os .ff img{width:100%;height:100%;object-fit:cover}
+.os .lead2{margin-top:22px;font-size:clamp(18px,1.4vw,21px);color:var(--s);max-width:31em}
+.cechy{display:grid;grid-template-columns:1fr 1fr;gap:0 34px;margin-top:34px}
+.cechy div{padding:22px 0;border-top:1px solid var(--l)}
+.cechy svg{width:30px;height:20px;display:block;margin-bottom:12px}
+.cechy h3{font-size:20px}
+.cechy p{margin-top:6px;color:var(--s);font-size:16px}
+
+/* zamowienie - ciemna */
+.dk{background:var(--k);color:#fff}
+.zam{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,5vw,90px);align-items:start}
+.zam .lead2{margin-top:22px;font-size:clamp(18px,1.4vw,21px);color:rgba(255,255,255,.85);max-width:28em}
+.zam .tl{display:inline-block;margin-top:30px;font-size:clamp(32px,3vw,44px);font-weight:700;text-decoration:none;letter-spacing:-.03em;color:var(--z);line-height:1}
+.zam .godz{margin-top:8px;color:rgba(255,255,255,.75)}
+.form{background:#fff;color:var(--t);border-radius:18px 18px 18px 4px;padding:clamp(24px,3vw,40px)}
+.form h3{font-size:24px}
+.form label{display:block;margin-top:16px;font-weight:600;font-size:15px}
+.form input,.form select{display:block;width:100%;margin-top:7px;font:inherit;font-size:17px;padding:14px 16px;border:1px solid #c5ccd3;border-radius:10px;background:#fff;color:var(--t)}
+.form input:focus,.form select:focus{outline:2px solid var(--zc);outline-offset:1px;border-color:var(--zc)}
+.form .dwa{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.form .btn{width:100%;margin-top:24px}
+.form .ok{margin-top:14px;font-size:15px;color:var(--zc);min-height:1.5em}
+.form .rodo{margin-top:12px;font-size:13.5px;color:var(--s);line-height:1.5}
+
+/* kontakt */
+.kont{display:grid;grid-template-columns:minmax(300px,.8fr) 1.2fr;gap:clamp(30px,4vw,70px);align-items:stretch}
+.dane{display:flex;flex-direction:column;gap:24px}
+.dane .tl{font-size:clamp(34px,3.3vw,48px);font-weight:700;text-decoration:none;color:var(--k);line-height:1.05;letter-spacing:-.03em}
+.dane dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 22px;font-size:17px}
+.dane dt{color:var(--s)}
+.dane dd{margin:0;font-weight:500}
+.dane dd a{text-decoration-color:var(--l);text-underline-offset:3px}
+.dane .sk{display:inline-flex;align-self:flex-start;font-weight:700;text-decoration:none;color:#fff;background:var(--k);padding:15px 24px;border-radius:12px 12px 12px 2px}
+.mapa{position:relative;min-height:400px;background:#dde3e8;overflow:hidden;border-radius:18px 18px 18px 4px}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapa .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--s);font-size:15px}
+
+/* stopka */
+.stopka{background:var(--k);color:rgba(255,255,255,.78);padding:48px 0 28px;font-size:15px;border-top:1px solid rgba(255,255,255,.08)}
+.stopka .g{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px 40px}
+.stopka .logo{color:#fff}
+.stopka .logo .wm i{color:var(--z)}
+.stopka .opis{margin-top:14px;max-width:26em}
+.stopka .fh{margin:0 0 10px;color:#fff;font-size:15px;font-weight:600}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka p+p{margin-top:4px}
+.stopka .dol{margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+.stopka .zr{font-size:12.5px;color:rgba(255,255,255,.6);margin-top:16px;line-height:1.5}
+.stopka .zr a{text-decoration:underline;text-underline-offset:2px}
+
+/* Wylinka - oficjalny znak */
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}html{scroll-behavior:auto}}
+
+/* responsywnosc */
+@media (max-width:1180px){.menu a{padding:10px 9px;font-size:15.5px}.top .wrap{gap:18px}}
+@media (max-width:1060px){
+  .menu,.top .tel{display:none}
+  .burger{display:flex}
+  .top.open .menu{display:flex;position:absolute;top:var(--hh);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--l);box-shadow:0 18px 30px rgba(13,16,22,.12);padding:8px var(--gut) 20px}
+  .top.open .menu a{padding:15px 2px;font-size:19px;border-bottom:1px solid var(--g);border-radius:0}
+  .top.open .menu .mtel{display:flex}
+  .zam,.kont,.os{grid-template-columns:1fr}
+  .os .ff{aspect-ratio:16/10;max-height:520px}
+  .pks{grid-template-columns:1fr 1fr}
+  .pks .pk:last-child{grid-column:1/-1;flex-direction:row}
+  .pks .pk:last-child .foto{flex:0 0 48%;aspect-ratio:auto}
+}
+.menu .mtel{display:none;margin-top:14px;justify-content:center;background:var(--z);color:var(--k)!important;font-weight:700;border-radius:12px 12px 12px 2px!important;border:0!important}
+@media (max-width:700px){
+  body{font-size:16.5px}
+  .hero{justify-content:flex-end}
+  .hero picture{inset:0 0 auto 0;height:auto}
+  .hero picture img{position:static;height:auto;aspect-ratio:1/1}
+  .hero:after{background:linear-gradient(180deg,rgba(13,16,22,0) 0,rgba(13,16,22,0) 46vw,rgba(13,16,22,.88) 82vw,var(--k) 100vw)}
+  .hero .in{padding:60vw 0 26px}
+  h1{font-size:clamp(32px,8.8vw,42px)}
+  .hero .lead{margin-top:14px;font-size:17px}
+  .cena-h{margin-top:20px}
+  .cena-h b{font-size:56px}
+  .hero .cta{margin-top:26px;gap:16px}
+  .hero .btn{width:100%}
+  .pks{grid-template-columns:1fr}
+  .pks .pk:last-child{flex-direction:column}
+  .pks .pk:last-child .foto{flex:none;aspect-ratio:4/3}
+  .pk .foto{aspect-ratio:16/9}
+  .pks .pk:last-child .foto{aspect-ratio:16/9}
+  .pk .tx{padding:20px 20px 22px}
+  .cechy{grid-template-columns:1fr}
+  .form .dwa{grid-template-columns:1fr}.form select{font-size:16px;padding-inline:12px}
+  .mapa{min-height:320px}
+  .stopka .g{grid-template-columns:1fr 1fr}
+  .stopka .g>div:first-child{grid-column:1/-1}
+  .dane .sk{align-self:stretch;justify-content:center}
+}
+@media (max-width:380px){.btn{font-size:17px;padding:16px 18px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="ptaszki" viewBox="0 0 44 13"><path d="M2 2.5 9.5 11 22 3.5" fill="none" stroke="#64C42F" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6.5 21 11 33 2.5" fill="none" stroke="#F8D830" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="ptak" viewBox="0 0 20 14"><path d="M2 6.5 7.5 12 18 2" fill="none" stroke="#3F8F17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="znak" viewBox="0 0 30 20"><circle cx="22" cy="3.6" r="3.2" fill="#64C42F"/><path d="M2 8 9 17.5 20 10" fill="none" stroke="#64C42F" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 12 19.5 17.5 28 9.5" fill="none" stroke="#F8D830" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Freenet - strona główna"><span class="wm">freenet<i>.</i>org</span><svg aria-hidden="true"><use href="#ptaszki"/></svg></a>
+    <nav class="menu" id="menu" aria-label="Menu">
+      <a href="#cennik">Cennik</a>
+      <a href="#osiedla">Dla nowych osiedli</a>
+      <a href="#zamow">Zamów</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="sk" href="https://ibok.wrocnet.pl/" rel="noopener">Strefa klienta</a>
+      <a class="mtel" href="tel:+48717215151">Zadzwoń: 71 721 51 51</a>
+    </nav>
+    <a class="tel" href="tel:+48717215151"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6.2 2.5 4 3.1c-.9.3-1.4 1.1-1.3 2 .6 5.6 5.6 10.6 11.2 11.2.9.1 1.7-.4 2-1.3l.6-2.2-3.4-1.6-1.6 1.6c-1.9-.9-3.4-2.4-4.3-4.3l1.6-1.6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>71 721 51 51</a>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Freenet - internet światłowodowy 1 Gb/s">
+  <picture>
+    <source media="(max-width:700px)" type="image/webp" srcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w, img/hero-m-960.webp 960w" sizes="100vw">
+    <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw" width="1600" height="900" fetchpriority="high" alt="Uśmiechnięty mężczyzna rozmawia przez tablet w jasnym mieszkaniu">
+  </picture>
+  <div class="in">
+    <h1>Internet światłowodowy 1&nbsp;Gb/s na nowym osiedlu</h1>
+    <p class="lead">Szybki światłowód dla nowych osiedli Wrocławia: 1000 Mb/s, bez limitu danych, router Wi-Fi 6 razem z internetem.</p>
+    <p class="cena-h"><b>39 zł</b><span>/mies.<br>brutto</span></p>
+    <div class="cta">
+      <a class="btn" href="#zamow">Zamów internet</a>
+      <p class="bok">albo zadzwoń: <a href="tel:+48717215151"><b>71 721 51 51</b></a><br>pn-pt 9:00-17:00</p>
+    </div>
+  </div>
+</section>
+
+<section class="sz" id="cennik">
+  <div class="wrap">
+    <div class="hd"><h2>Cennik Freenet</h2><p>Jedna prędkość - pełny gigabit. Wybierz, czy dokładasz telewizję i telefon komórkowy. Ceny brutto za miesiąc.</p></div>
+    <div class="pks">
+      <article class="pk">
+        <div class="foto"><img src="img/gb-480.webp" srcset="img/gb-480.webp 480w, img/gb-640.webp 640w, img/gb-800.webp 800w" sizes="(max-width:700px) 92vw, (max-width:1060px) 46vw, 420px" width="480" height="360" loading="lazy" alt="Dwie przyjaciółki grają na konsoli w salonie"></div>
+        <div class="tx"><h3>Internet 1000</h3>
+          <ul><li><svg aria-hidden="true"><use href="#ptak"/></svg>Światłowód 1000 Mb/s</li><li><svg aria-hidden="true"><use href="#ptak"/></svg>Router Wi-Fi 6 w zestawie</li></ul>
+          <p class="pc"><b>39 zł</b><span>/mies.<br>brutto</span></p>
+          <a class="pz" href="#zamow" data-pakiet="Internet 1000 Mb/s - 39 zł/mies.">Zamawiam</a></div>
+      </article>
+      <article class="pk">
+        <div class="foto"><img src="img/tv-480.webp" srcset="img/tv-480.webp 480w, img/tv-640.webp 640w, img/tv-800.webp 800w" sizes="(max-width:700px) 92vw, (max-width:1060px) 46vw, 420px" width="480" height="360" loading="lazy" alt="Para gra na konsoli na kanapie"></div>
+        <div class="tx"><h3>Internet + TV</h3>
+          <ul><li><svg aria-hidden="true"><use href="#ptak"/></svg>Światłowód 1000 Mb/s</li><li><svg aria-hidden="true"><use href="#ptak"/></svg>TV Wolny Czas (pakiet ekonomiczny)</li></ul>
+          <p class="pc"><b>79 zł</b><span>/mies.<br>brutto</span></p>
+          <a class="pz" href="#zamow" data-pakiet="Internet 1000 Mb/s + TV Wolny Czas - 79 zł/mies.">Zamawiam</a></div>
+      </article>
+      <article class="pk">
+        <div class="foto"><img src="img/mobile-480.webp" srcset="img/mobile-480.webp 480w, img/mobile-640.webp 640w, img/mobile-800.webp 800w" sizes="(max-width:700px) 92vw, (max-width:1060px) 46vw, 420px" width="480" height="360" loading="lazy" alt="Kobieta przegląda telefon na kanapie"></div>
+        <div class="tx"><h3>Internet + TV + Mobile</h3>
+          <ul><li><svg aria-hidden="true"><use href="#ptak"/></svg>Światłowód 1000 Mb/s</li><li><svg aria-hidden="true"><use href="#ptak"/></svg>TV Wolny Czas (pakiet ekonomiczny)</li><li><svg aria-hidden="true"><use href="#ptak"/></svg>Abonament komórkowy</li></ul>
+          <p class="pc"><b>99 zł</b><span>/mies.<br>brutto</span></p>
+          <a class="pz" href="#zamow" data-pakiet="Internet 1000 Mb/s + TV Wolny Czas + Mobile - 99 zł/mies.">Zamawiam</a></div>
+      </article>
+    </div>
+    <p class="uwaga">Ceny brutto za miesiąc. Dostępność usługi pod Twoim adresem potwierdzimy telefonicznie po zamówieniu.</p>
+  </div>
+</section>
+
+<section id="osiedla">
+  <div class="wrap os">
+    <div class="ff"><img src="img/osiedle-720.webp" srcset="img/osiedle-480.webp 480w, img/osiedle-720.webp 720w, img/osiedle-960.webp 960w" sizes="(max-width:1060px) 92vw, 520px" width="720" height="900" loading="lazy" alt="Nowy budynek mieszkalny z balkonami w słońcu"></div>
+    <div>
+      <h2>Wprowadzasz się? Podłącz internet od razu</h2>
+      <p class="lead2">Freenet to internet dla nowych osiedli Wrocławia. Za marką stoi WrocNet - lokalny operator z Wrocławia, który od lat dostarcza internet do domów i mieszkań.</p>
+      <div class="cechy">
+        <div><svg aria-hidden="true"><use href="#znak"/></svg><h3>Pełny gigabit</h3><p>Światłowód 1000 Mb/s - na pracę zdalną, granie i filmy naraz.</p></div>
+        <div><svg aria-hidden="true"><use href="#znak"/></svg><h3>Bez limitu danych</h3><p>Pobierasz i oglądasz, ile chcesz.</p></div>
+        <div><svg aria-hidden="true"><use href="#znak"/></svg><h3>Router Wi-Fi 6</h3><p>Światłowodowy router w zestawie z internetem.</p></div>
+        <div><svg aria-hidden="true"><use href="#znak"/></svg><h3>Lokalne biuro</h3><p>BOK przy ul. Podwale 57 we Wrocławiu, pn-pt 9:00-17:00.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dk" id="zamow">
+  <div class="wrap zam">
+    <div>
+      <h2>Zamów Freenet</h2>
+      <p class="lead2">Zostaw dane - oddzwonimy, potwierdzimy dostępność pod Twoim adresem i umówimy instalację.</p>
+      <a class="tl" href="tel:+48717215151">71 721 51 51</a>
+      <p class="godz">Zamówienia telefoniczne pn-pt 9:00-17:00</p>
+    </div>
+    <form class="form" id="form" novalidate>
+      <h3>Formularz zamówienia</h3>
+      <label>Pakiet<select name="pakiet" id="pakiet"><option>Internet 1000 Mb/s - 39 zł/mies.</option><option>Internet 1000 Mb/s + TV Wolny Czas - 79 zł/mies.</option><option>Internet 1000 Mb/s + TV Wolny Czas + Mobile - 99 zł/mies.</option></select></label>
+      <div class="dwa">
+        <label>Imię i nazwisko<input name="imie" autocomplete="name"></label>
+        <label>Telefon<input name="tel" type="tel" autocomplete="tel" placeholder="np. 600 000 000"></label>
+      </div>
+      <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+      <label>Adres instalacji<input name="adres" autocomplete="street-address" placeholder="ulica, numer budynku i mieszkania, Wrocław"></label>
+      <button class="btn" type="submit">Wyślij zamówienie</button>
+      <p class="ok" id="ok" role="status"></p>
+      <p class="rodo">Dane z formularza przetwarzamy wyłącznie w celu obsługi zamówienia. Szczegóły w polityce prywatności.</p>
+    </form>
+  </div>
+</section>
+
+<section class="sz" id="kontakt">
+  <div class="wrap">
+    <div class="hd"><h2>Kontakt</h2></div>
+    <div class="kont">
+      <div class="dane">
+        <a class="tl" href="tel:+48717215151">71 721 51 51</a>
+        <dl>
+          <dt>BOK</dt><dd>ul. Podwale 57<br>50-039 Wrocław</dd>
+          <dt>Godziny</dt><dd>pn-pt 9:00-17:00</dd>
+          <dt>E-mail</dt><dd><a href="mailto:bok@wrocnet.pl">bok@wrocnet.pl</a></dd>
+        </dl>
+        <a class="sk" href="https://ibok.wrocnet.pl/" rel="noopener">Strefa klienta</a>
+      </div>
+      <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Podwale+57,+50-039+Wroc%C5%82aw&amp;z=16&amp;output=embed">
+        <div class="ph">Mapa: ul. Podwale 57, Wrocław</div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <div class="g">
+      <div>
+        <a class="logo" href="#" aria-label="Freenet - do góry"><span class="wm">freenet<i>.</i>org</span><svg aria-hidden="true"><use href="#ptaszki"/></svg></a>
+        <p class="opis">Internet światłowodowy 1 Gb/s dla nowych osiedli Wrocławia. Marka WrocNet Sp. z o.o.</p>
+      </div>
+      <div>
+        <h3 class="fh">Biuro Obsługi Klienta</h3>
+        <p>ul. Podwale 57</p>
+        <p>50-039 Wrocław</p>
+        <p>pn-pt 9:00-17:00</p>
+      </div>
+      <div>
+        <h3 class="fh">Kontakt</h3>
+        <p><a href="tel:+48717215151">71 721 51 51</a></p>
+        <p><a href="mailto:bok@wrocnet.pl">bok@wrocnet.pl</a></p>
+        <p><a href="https://ibok.wrocnet.pl/" rel="noopener">Strefa klienta</a></p>
+      </div>
+    </div>
+    <div class="dol">
+      <span>&copy; 2026 WrocNet Sp. z o.o.</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=freenet.org.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+    <p class="zr">Wersja robocza strony. Zdjęcia: Vitaly Gariev, Daniel Begel / <a href="https://unsplash.com/license" rel="noopener">Unsplash</a>.</p>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
