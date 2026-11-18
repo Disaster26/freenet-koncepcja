@@ -208,6 +208,46 @@ section{padding:clamp(64px,8vw,120px) 0}
   .dane .sk{align-self:stretch;justify-content:center}
 }
 @media (max-width:380px){.btn{font-size:17px;padding:16px 18px}}
+
+/* 18.11: weselsza wersja - jasne tla, wiecej zieleni i zolci z logo */
+:root{--krem:#FFFBE6;--zj:#EEF8E4;--zl:#FFF3B0}
+.top .tel{background:var(--z);color:var(--k)}.top .tel:hover{background:var(--zh)}
+.hero{color:var(--k);background:var(--krem)}
+.hero picture img{filter:saturate(1.12) brightness(1.04)}
+.hero:after{background:linear-gradient(90deg,rgba(255,251,230,.97) 0%,rgba(255,251,230,.9) 33%,rgba(255,251,230,.35) 56%,rgba(255,251,230,0) 70%)}
+.hero h1{color:var(--k)}
+.hero h1 .zw{color:var(--zc)}
+.hero .lead{color:#2B323B}
+.cena-h b{color:var(--zc)}
+.cena-h span,.hero .bok{color:#3A424C}
+.hero .bok b{color:var(--k)}
+.hero .naklejka{display:inline-flex;align-items:center;gap:8px;background:var(--y);color:var(--k);font-weight:700;font-size:15px;padding:7px 14px;border-radius:999px;margin-bottom:18px;box-shadow:0 6px 18px -8px rgba(160,130,0,.6)}
+.hero .naklejka svg{width:20px;height:13px}
+.hero .in:before{content:"";position:absolute;left:-80px;top:10%;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(248,216,48,.35),rgba(248,216,48,0) 70%);z-index:-1}
+#cennik{background:linear-gradient(180deg,var(--krem),#fff 85%)}
+.pk{border-color:#E8E2C0;box-shadow:0 18px 40px -30px rgba(63,143,23,.45)}
+.pk .tx{border-top:5px solid var(--z)}
+.pk:nth-child(2) .tx{border-top-color:var(--y)}
+.pk:nth-child(3) .tx{border-top-color:var(--zc)}
+.pc b{color:var(--zc)}
+h2 .pod{background:linear-gradient(transparent 62%,var(--zl) 62%,var(--zl) 92%,transparent 92%);padding:0 .08em}
+#osiedla{background:#fff}
+.cechy svg{transform:scale(1.15);transform-origin:left center}
+.dk{background:linear-gradient(135deg,#7BD143 0%,var(--z) 55%,#4FAE1E 100%);color:var(--k)}
+.zam .lead2{color:#18301A}
+.zam .tl{color:var(--k)}
+.zam .godz{color:#1F3A14}
+.zam h2{color:var(--k)}
+.form{box-shadow:0 30px 60px -30px rgba(20,60,10,.55)}
+#kontakt{background:var(--zj)}
+.dane .sk{background:var(--z);color:var(--k)}
+.stopka{background:#16340C;border-top:6px solid var(--y)}
+.stopka .logo .wm i{color:var(--y)}
+@media (max-width:700px){
+  .hero:after{background:linear-gradient(180deg,rgba(255,251,230,0) 0,rgba(255,251,230,0) 46vw,rgba(255,251,230,.92) 82vw,var(--krem) 100vw)}
+  .hero .in:before{display:none}
+  .hero .naklejka{font-size:14px;margin-bottom:12px}
+}
 </style>
 </head>
 <body>
@@ -239,7 +279,8 @@ section{padding:clamp(64px,8vw,120px) 0}
     <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw" width="1600" height="900" fetchpriority="high" alt="Uśmiechnięty mężczyzna rozmawia przez tablet w jasnym mieszkaniu">
   </picture>
   <div class="in">
-    <h1>Internet światłowodowy 1&nbsp;Gb/s na nowym osiedlu</h1>
+    <p class="naklejka"><svg aria-hidden="true"><use href="#ptak"/></svg>Bez limitu danych + router Wi-Fi 6</p>
+    <h1>Internet światłowodowy <span class="zw">1&nbsp;Gb/s</span> na nowym osiedlu</h1>
     <p class="lead">Szybki światłowód dla nowych osiedli Wrocławia: 1000 Mb/s, bez limitu danych, router Wi-Fi 6 razem z internetem.</p>
     <p class="cena-h"><b>39 zł</b><span>/mies.<br>brutto</span></p>
     <div class="cta">
@@ -251,7 +292,7 @@ section{padding:clamp(64px,8vw,120px) 0}
 
 <section class="sz" id="cennik">
   <div class="wrap">
-    <div class="hd"><h2>Cennik Freenet</h2><p>Jedna prędkość - pełny gigabit. Wybierz, czy dokładasz telewizję i telefon komórkowy. Ceny brutto za miesiąc.</p></div>
+    <div class="hd"><h2>Cennik <span class="pod">Freenet</span></h2><p>Jedna prędkość - pełny gigabit. Wybierz, czy dokładasz telewizję i telefon komórkowy. Ceny brutto za miesiąc.</p></div>
     <div class="pks">
       <article class="pk">
         <div class="foto"><img src="img/gb-480.webp" srcset="img/gb-480.webp 480w, img/gb-640.webp 640w, img/gb-800.webp 800w" sizes="(max-width:700px) 92vw, (max-width:1060px) 46vw, 420px" width="480" height="360" loading="lazy" alt="Dwie przyjaciółki grają na konsoli w salonie"></div>
